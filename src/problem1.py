@@ -3,9 +3,9 @@ Exam 3, problem 1.
 
 Authors: Vibha Alangar, Aaron Wilkin, David Mutchler, Dave Fisher, 
          Matt Boutell, Amanda Stouder, their colleagues and 
-         PUT_YOUR_NAME_HERE.  January 2019.
+         Jack Franey.  January 2019.
 
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import time
 import testing_helper
@@ -139,7 +139,14 @@ def problem1(n):
     # and THEN try the full-credit version.
     # As always, CONTINUE to the next problem if you are STUCK on this one.
     # -------------------------------------------------------------------------
-
+    answer = 0
+    seq = [0,1]
+    i = 0
+    while answer < n:
+        seq = seq + [seq[i] + seq[i+1]]
+        i = i + 1
+        answer = seq[i-1]
+    return answer
 
 ###############################################################################
 # Our tests use the following to print error messages in red.
