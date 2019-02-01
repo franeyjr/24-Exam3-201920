@@ -139,6 +139,16 @@ def problem1(n):
     # and THEN try the full-credit version.
     # As always, CONTINUE to the next problem if you are STUCK on this one.
     # -------------------------------------------------------------------------
+    # answer = 0
+    # seq = [0,1]
+    # i = 0
+    # while True:
+    #     seq = seq + [seq[i] + seq[i+1]]
+    #     i = i + 1
+    #     if answer >=n:
+    #         answer = seq[i-1]
+    #         return answer
+
     answer = 0
     seq = [0,1]
     i = 0
